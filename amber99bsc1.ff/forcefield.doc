@@ -1,0 +1,19 @@
+AMBER99 force field BSC1 (Orozco et al. Nature methods, 13(1), pp.55-58.)
+
+********************************************************************
+* BSC0 modifications added by A. Villa to ffamber99 port in GROMACS*
+* Further BSC1 modifications added by V. Lindahl.                  *
+* Na+ ion parameters are taken from:                               *
+* Dang 1995 (DOI: 10.1021/ja00131a018).         		   *
+* For this BSC1 implementation, please cite:                       *
+* https://doi.org/10.1371/journal.pcbi.1005463.        		   *
+* The original ffamber ports were written by Eric J. Sorin,        *
+* CSU Long Beach, Dept. of Chem & Biochem, and have now been       *
+* integrated with the standard gromacs distribution.               *
+* (Please don't blame Eric for errors we might have introduced.)   *
+* For the implementation/validation, please read/cite:             * 
+* Sorin & Pande (2005). Biophys. J. 88(4), 2472-2493.              *
+* For related material and updates, please consult                 *
+* http://chemistry.csulb.edu/ffamber/                              *
+********************************************************************
+
