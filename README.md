@@ -15,14 +15,14 @@ Trusted force field files for gromacs
  
  All the manipulations were carried out according to Yoo & Aksimetiev group website. Here is what was done:
    - Downloaded package
-   - Copied these files to the original .ff file: *- cufix.itp, 
-                                                   - mg-sol6.itp
-                                                   - mg-sol6.pdb
-                                                   - ca-sol7.itp
-                                                   - ca-sol7.pdb.*
-    -  Replaced atom types of O1P and O2P atoms (O2) with ON2 for all nucleotides in *dna.rtp and rna.rtp*. ON2 atom type is defined in *cufix.itp*.
-    - Added ``` #include "cufix.itp" ``` to *forcefield.itp* between ``` #include "ffnonbonded.itp" ``` and ``` #include "ffbonded.it" ```.
-    - Deleted the following ions from *ffnonbonded.itp*: 
+   - Copied these files to the original .ff file: *cufix.itp, 
+                                                    mg-sol6.itp,
+                                                    mg-sol6.pdb,
+                                                    ca-sol7.itp,
+                                                    ca-sol7.pdb.*
+   -  Replaced atom types of O1P and O2P atoms (O2) with ON2 for all nucleotides in *dna.rtp and rna.rtp*. ON2 atom type is defined in *cufix.itp*.
+   - Added ``` #include "cufix.itp" ``` to *forcefield.itp* between ``` #include "ffnonbonded.itp" ``` and ``` #include "ffbonded.it" ```.
+   - Deleted the following ions from *ffnonbonded.itp*: 
       Li, Na, K, Cl, MG, Rb, Cs, F, Br, I. 
       CUFIX uses new ion parameters by the Cheatham group.
    
