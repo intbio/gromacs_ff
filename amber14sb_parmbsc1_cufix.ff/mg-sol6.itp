@@ -1,0 +1,109 @@
+[ moleculetype ]
+; molname      nrexcl
+MG-SOL6		1	; all intra-water will be explicitly excluded by [exclusions].
+                        ; "The only difference between the two types is that type 1 
+			; is used for generating exclusions and type 2 is not."
+			; in 5.5 contraints.
+
+[ atoms ]
+; id   at type	res nr	residu name	at name		cg nr	charge
+;#ifdef _FF_CHARMM
+1	MG	1	MG		MG		1	2		 
+2       OWMG    1       MG              OW             2       -1.190
+3       HW      1       MG             HW1             2        0.595
+4       HW      1       MG             HW2             2        0.595
+5       OWMG    1       MG              OW             3       -1.190
+6       HW      1       MG             HW1             3        0.595
+7       HW      1       MG             HW2             3        0.595
+8       OWMG    1       MG              OW             4       -1.190
+9       HW      1       MG             HW1             4        0.595
+10      HW      1       MG             HW2             4        0.595
+11      OWMG    1       MG              OW             5       -1.190
+12      HW      1       MG             HW1             5        0.595
+13      HW      1       MG             HW2             5        0.595
+14      OWMG    1       MG              OW             6       -1.190
+15      HW      1       MG             HW1             6        0.595
+16      HW      1       MG             HW2             6        0.595
+17      OWMG    1       MG              OW             7       -1.190
+18      HW      1       MG             HW1             7        0.595
+19      HW      1       MG             HW2             7        0.595
+;#endif
+
+[ constraints ]	; between Mg and OW
+;ai aj funct length_A length_B
+;1  2    2    0.210	; using type 2 because Mg-OW should not be excluded.
+;1  5    2    0.210
+;1  8    2    0.210
+;1  11   2    0.210
+;1  14   2    0.210
+;1  17   2    0.210
+; water 1
+2  3    1    0.09572	; O-H
+2  4    1    0.09572
+3  4    1    0.15139	; H-H
+; water 2
+5  6    1    0.09572
+5  7    1    0.09572
+6  7    1    0.15139
+; water 3
+8   9   1    0.09572
+8  10   1    0.09572
+9  10   1    0.15139
+; water 4
+11 12   1    0.09572
+11 13   1    0.09572
+12 13   1    0.15139
+; water 5
+14 15   1    0.09572
+14 16   1    0.09572
+15 16   1    0.15139
+; water 6
+17 18   1    0.09572
+17 19   1    0.09572
+18 19   1    0.15139
+
+[ bonds ]   ; bondtype 10 is similar to distance_restraints and doesn't induce exclusions.
+;ai aj  type  low   up1   up2   k
+;1   2   6   0.205  500000.0
+;1   5   6   0.205  500000.0    
+;1   8   6   0.205  500000.0   
+;1  11   6   0.205  500000.0   
+;1  14   6   0.205  500000.0   
+;1  17   6   0.205  500000.0   
+1   2   10    0.0   0.25  9.0   500000.0
+1   5   10    0.0   0.25  9.0   500000.0    
+1   8   10    0.0   0.25  9.0   500000.0   
+1  11   10    0.0   0.25  9.0   500000.0   
+1  14   10    0.0   0.25  9.0   500000.0   
+1  17   10    0.0   0.25  9.0   500000.0   
+
+; settles in two different moleculetypes are not supported.
+;[ settles ]	; TIP3P water only
+;; i	  j	funct	length
+;2 	  2	0.09572	0.15139
+;5 	  5	0.09572	0.15139
+;8 	  8	0.09572	0.15139
+;11	 11	0.09572	0.15139
+;14	 14	0.09572	0.15139
+;17	 17	0.09572	0.15139
+
+[ exclusions ]	    ; TIP3P water only
+2 3 4
+3 4 2
+4 2 3
+5 6 7
+6 7 5
+7 5 6
+8 9 10
+9 10 8
+10 8 9
+11 12 13
+12 13 11
+13 11 12
+14 15 16
+15 16 14
+16 14 15
+17 18 19
+18 19 17
+19 17 18
+
