@@ -14,7 +14,7 @@ Trusted force field files for gromacs
  - [CUFIX corrections](http://bionano.physics.illinois.edu/CUFIX) by Yoo & Aksimentiev, 2018
  
  All the manipulations were carried out according to Yoo & Aksimetiev group website. Here is what was done:
-   - Downloaded package
+   - Downloaded package https://www.dropbox.com/sh/90quvm5sla7oqym/AAABoTI9-Z4aLnm-QxDVm_o5a?dl=0
    - Copied these files to the original .ff file: *cufix.itp, 
                                                     mg-sol6.itp,
                                                     mg-sol6.pdb,
