@@ -23,15 +23,17 @@ Trusted force field files for gromacs
    -  Replaced atom types of O1P and O2P atoms (O2) with ON2 for all nucleotides in *dna.rtp and rna.rtp*. ON2 atom type is defined in *cufix.itp*.
    Commands used:
    ``` 
-   sed s/O1P/ON2/g dna.rtp 
-   sed s/O1P/ON2/g dna.rtp > dna.rtp
-   sed s/O2P/ON2/g dna.rtp 
-   sed s/O2P/ON2/g dna.rtp > dna.rtp
-   sed s/O1P/ON2/g rna.rtp 
-   sed s/O1P/ON2/g rna.rtp > rna.rtp
-   sed s/O2P/ON2/g rna.rtp 
-   sed s/O2P/ON2/g rna.rtp > rna.rtp
+    
+   sed s/O1P/ON2/g dna.rtp > dna1.rtp
+   
+   sed s/O2P/ON2/g dna1.rtp > dna2.rtp
+  
+   sed s/O1P/ON2/g rna.rtp > rna1.rtp
+   
+   sed s/O2P/ON2/g rna1.rtp > rna2.rtp
    ```
+   Then rename files dna.rtp and rna.rtp to dna_old.rtp and rna_old.rtp
+   Rename dna2.rtp, rna2.rtp to dna.rtp, rna.rtp
    - Added ``` #include "cufix.itp" ``` to *forcefield.itp* between ``` #include "ffnonbonded.itp" ``` and ``` #include "ffbonded.it" ```.
    - Deleted the following ions from *ffnonbonded.itp*: 
       Li, Na, K, Cl, MG, Rb, Cs, F, Br, I. 
