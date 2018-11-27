@@ -33,7 +33,14 @@ Trusted force field files for gromacs
    sed s/O2P/ON2/g rna1.rtp > rna2.rtp
    ```
    Then rename files dna.rtp and rna.rtp to dna_old.rtp and rna_old.rtp
-   Rename dna2.rtp, rna2.rtp to dna.rtp, rna.rtp
+   Rename dna2.rtp, rna2.rtp to dna.rtp, rna.rtp. Then delete old ones. 
+   
+   - It is not stated in the instructionb on the Aksiemetiev website. You should add atomtypes in cufix.itp:
+   ```
+   NH3          7      14.01    0.0000  A   3.25000e-01  7.11280e-01   ;jejoong spermine
+   NP           7      14.01    0.0000  A   3.25000e-01  7.11280e-01   ;jejoong spermine
+   ```
+   
    - Added ``` #include "cufix.itp" ``` to *forcefield.itp* between ``` #include "ffnonbonded.itp" ``` and ``` #include "ffbonded.it" ```.
    - Deleted the following ions from *ffnonbonded.itp*: 
       Li, Na, K, Cl, MG, Rb, Cs, F, Br, I. 
