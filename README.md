@@ -7,6 +7,7 @@ Trusted force field files for gromacs
 - http://ambermd.org/doc12/Amber18.pdf see section 3.
 - As of 2018 -  ff14SB is the recommended protein force field in Amber.
 - ff14SB paper https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4821407/pdf/nihms772276.pdf
+- For DNA one should use at least PARMBSC0 or PARMBSC1 corrections with AMBER or 
 
 ## Added Force Fields explanation 
 ### AMBER14SB + parambsc1 + CUFIX
