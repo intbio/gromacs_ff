@@ -10,20 +10,9 @@
                                                     mg-sol6.pdb,
                                                     ca-sol7.itp,
                                                     ca-sol7.pdb.*
-   -  Replaced atom types of O1P and O2P atoms (O2) with ON2 for all nucleotides in *dna.rtp and rna.rtp*. ON2 atom type is defined in *cufix.itp*.
-   Commands used:
-   ``` 
+   -  Replaced atom types for O1P and O2P atoms (O2) with ON2 for all nucleotides in *dna.rtp and rna.rtp*. ON2 atom type is defined in *cufix.itp*.
+
     
-   sed s/O1P/ON2/g dna.rtp > dna1.rtp
-   
-   sed s/O2P/ON2/g dna1.rtp > dna2.rtp
-  
-   sed s/O1P/ON2/g rna.rtp > rna1.rtp
-   
-   sed s/O2P/ON2/g rna1.rtp > rna2.rtp
-   ```
-   Then rename files dna.rtp and rna.rtp to dna_old.rtp and rna_old.rtp
-   Rename dna2.rtp, rna2.rtp to dna.rtp, rna.rtp. Then delete old ones. 
    
    - It is not stated in the instructionb on the Aksiemetiev website. You should add atomtypes in cufix.itp:
    ```
