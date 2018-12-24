@@ -62,6 +62,7 @@ OW                16.00000	; oxygen in TIP3P water
 OH                16.00000	; oxygen in hydroxyl group
 OS                16.00000	; ether and ester oxygen
 O2                16.00000	; carboxyl and phosphate group oxygen
+ON2                16.00000	; carboxyl and phosphate group oxygen
 OP                16.00000      ;
 P                 30.97000	; phosphate,pol:JACS,112,8543,90,K.J.Miller
 S                 32.06000	; S in disulfide linkage,pol:JPC,102,2399,98
