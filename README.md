@@ -12,6 +12,8 @@ Trusted force field files for gromacs in this repo:
 - The amber OL15 can be downloaded from the gromacs web-site.
 
 ### Simulating disordered proteins
+- There is CHARMM36m (2016) ff, it is now recommended for all protein simulations, can be found at MacKerells web-page (see below). Also ports for Gromacs are there.
+- In AMBER another way is to use OPC water model.
 
 ### Simulations of proteins and protein folding
 - Generally there are two options standard latest AMBER or CHARMM force fields.
