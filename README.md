@@ -1,9 +1,15 @@
 # gromacs_ff
-Trusted force field files for gromacs
+Trusted force field files for gromacs in this repo:
 
 - https://github.com/intbio/gromacs_ff/tree/master/amber14sb_parmbsc1.ff from Gromacs web-site
 - https://github.com/intbio/gromacs_ff/tree/master/amber14sb_parmbsc1_cufix.ff same but with CUFIX corrections
 
+## General notes on available force fields
+### Simulating DNA
+
+### Simulating disordered protein
+
+### Simulations of proteins and protein folding
 
 ## Links to external ff resources
 ### AMBER
