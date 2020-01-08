@@ -6,10 +6,17 @@ Trusted force field files for gromacs in this repo:
 
 ## General notes on available force fields
 ### Simulating DNA
+- The best source of information is usually the Amber manual. Currently, [Amber 19 manual](http://ambermd.org/doc12/Amber19.pdf) on page 38 discusses two options parmbsc1 from Orozco group and OL15 from Sponer group. The do not make a choice as to which is better, howerver, on the front page the OL15 is recommended.
+- As for ions, by default the Young Cheatham 2008 ions are selected in Amber ff. Looks like it may be a good idea to replace them with CUFIX from Aksimentiev group.
+- The amber14sb_parmbsc1_cufix is available in this repo.
+- The amber OL15 can be downloaded from the gromacs web-site.
 
-### Simulating disordered protein
+### Simulating disordered proteins
 
 ### Simulations of proteins and protein folding
+- Generally there are two options standard latest AMBER or CHARMM force fields.
+- See AMBER manual for AMBER, currently the ff14SB is recommended.
+- See MacKerell web-site for CHARMM http://mackerell.umaryland.edu/charmm_ff.shtml . Strictly speaking the charmm ff is updated with each new release of charmm (currently 44). However, since CHARMM36 the changes have been small, so on MacKerell's web-page they are reffered as updates to the CHARMM36 ff.
 
 ## Links to external ff resources
 ### AMBER
