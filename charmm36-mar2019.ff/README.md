@@ -22,7 +22,7 @@ charmm36-jul2017.ff.tgz
 A Python program to convert ParamChem CGenFF toppar stream file from CHARMM to GROMACS format. The comments section in the beginning of the program provides usage information. PLEASE NOTE that all scripts support lone pairs on halogens, however the current topology construction (type 2fd) is only compatible with GROMACS 2020 and newer.
 ```
 
-So the correspndence between ff versions in charmm format and in gromacs format is a bit unclear.
+So the correspondence between ff versions in charmm format and in gromacs format is a bit unclear.
 
 In [toppar_c36_jul18](toppar_c36_jul18) folder we put the core files of the jul18 version of ff in charmm format, there is a history file there [toppar_c36_jul18/toppar_all.history](toppar_c36_jul18/toppar_all.history).
 
@@ -49,9 +49,10 @@ LIT    ON3      -0.0167     3.1775 ! Savelyev and MacKerell, JPCB 2015
 ```
 
 In JMB paper these params where used, that were around 2013 already in CHARMM36 see [here](https://github.com/molsim/MYSOFT/blob/6524a761462a948e70f392c4ab24dcda4cd4d508/MD_simulations_NAMD/nucleosome_CHARMM/prep/toppar_water_ions.str#L266): Y. Luo, B. Roux, Simulation of osmotic pressure in concentrated aqueous salt solutions, J. Phys. Chem. Lett. 1 (2010) 183–189.
-So apparently these were improved by Savelyev and MacKerell, JPCB 2015 (https://pubs.acs.org/doi/10.1021/acs.jpcb.5b00683)
+
+In the current version they are superseeded by additional NBFIXes from Savelyev and MacKerell, JPCB 2015 (https://pubs.acs.org/doi/10.1021/acs.jpcb.5b00683) and Venable, R.M.; Luo, Y,; Gawrisch, K.; Roux, B.; Pastor, R.W. J. Phys. Chem. B 2013, 117 (35), pp 10183–10192.  DOI: 10.1021/jp401512z to the interaction of ions with different groups (carboxylate for protein and some groups for lipids).
 
 
 Here you can see params and comments in ff files citing publications https://github.com/intbio/gromacs_ff/blob/59ed25f0c97e0599fc653bf43c6651d05205dd8a/charmm36-mar2019.ff/toppar_c36_jul18/toppar_water_ions.str#L301
 
-SOD NA and SOD POT are the same, except for rounding error (now precision is 4 digits). SOD - prot carboxylate - changed (! Venable, R.M.; Luo, Y,; Gawrisch, K.; Roux, B.; Pastor, R.W. J. Phys. Chem. B 2013, 117 (35), pp 10183–10192.  DOI: 10.1021/jp401512z).
+NOTE also that current NBFIXes reduced precision to 4 digits from 6.
