@@ -50,9 +50,14 @@ LIT    ON3      -0.0167     3.1775 ! Savelyev and MacKerell, JPCB 2015
 
 In JMB paper these params where used, that were around 2013 already in CHARMM36 see [here](https://github.com/molsim/MYSOFT/blob/6524a761462a948e70f392c4ab24dcda4cd4d508/MD_simulations_NAMD/nucleosome_CHARMM/prep/toppar_water_ions.str#L266): Y. Luo, B. Roux, Simulation of osmotic pressure in concentrated aqueous salt solutions, J. Phys. Chem. Lett. 1 (2010) 183–189.
 
-In the current version they are superseeded by additional NBFIXes from Savelyev and MacKerell, JPCB 2015 (https://pubs.acs.org/doi/10.1021/acs.jpcb.5b00683) and Venable, R.M.; Luo, Y,; Gawrisch, K.; Roux, B.; Pastor, R.W. J. Phys. Chem. B 2013, 117 (35), pp 10183–10192.  DOI: 10.1021/jp401512z to the interaction of ions with different groups (carboxylate for protein and some groups for lipids).
-
+In the current version they are superseeded by additional NBFIXes from Savelyev and MacKerell, JPCB 2015 (https://pubs.acs.org/doi/10.1021/acs.jpcb.5b00683) (actually for Na K and Cl they are the same).
+From  Venable, R.M.; Luo, Y,; Gawrisch, K.; Roux, B.; Pastor, R.W. J. Phys. Chem. B 2013, 117 (35), pp 10183–10192.  DOI: 10.1021/jp401512z NBFIXes to the interaction of ions with different groups (carboxylate for protein and some groups for lipids) are added.
 
 Here you can see params and comments in ff files citing publications https://github.com/intbio/gromacs_ff/blob/59ed25f0c97e0599fc653bf43c6651d05205dd8a/charmm36-mar2019.ff/toppar_c36_jul18/toppar_water_ions.str#L301
 
 NOTE also that current NBFIXes reduced precision to 4 digits from 6.
+
+
+FOR FUTURE:
+
+the Aksimentiev NBFIXes CUFIX are available in charmm format (https://www.dropbox.com/s/3v1ng0nwm74qciv/toppar_water_ions_cufix.str?dl=0). They would replace both Na Cl and Na - carboxylate with repect to standard (which is without NBFIX - i.e. pre Luo and Roux corrections).
