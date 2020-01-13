@@ -50,3 +50,6 @@ LIT    ON3      -0.0167     3.1775 ! Savelyev and MacKerell, JPCB 2015
 
 In JMB paper these params where used, that were around 2013 already in CHARMM36: Y. Luo, B. Roux, Simulation of osmotic pressure in concentrated aqueous salt solutions, J. Phys. Chem. Lett. 1 (2010) 183–189.
 So apparently these were improved by Savelyev and MacKerell, JPCB 2015 (https://pubs.acs.org/doi/10.1021/acs.jpcb.5b00683)
+
+
+Here you can see comment in ff files citing publications https://github.com/intbio/gromacs_ff/blob/59ed25f0c97e0599fc653bf43c6651d05205dd8a/charmm36-mar2019.ff/toppar_c36_jul18/toppar_water_ions.str#L301
