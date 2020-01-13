@@ -48,7 +48,7 @@ CLA    POT      -0.1142     4.0810 ! Savelyev and MacKerell, JPCB 2015
 LIT    ON3      -0.0167     3.1775 ! Savelyev and MacKerell, JPCB 2015
 ```
 
-In JMB paper these params where used, that were around 2013 already in CHARMM36: Y. Luo, B. Roux, Simulation of osmotic pressure in concentrated aqueous salt solutions, J. Phys. Chem. Lett. 1 (2010) 183–189.
+In JMB paper these params where used, that were around 2013 already in CHARMM36 see [here](https://github.com/molsim/MYSOFT/blob/6524a761462a948e70f392c4ab24dcda4cd4d508/MD_simulations_NAMD/nucleosome_CHARMM/prep/toppar_water_ions.str#L266): Y. Luo, B. Roux, Simulation of osmotic pressure in concentrated aqueous salt solutions, J. Phys. Chem. Lett. 1 (2010) 183–189.
 So apparently these were improved by Savelyev and MacKerell, JPCB 2015 (https://pubs.acs.org/doi/10.1021/acs.jpcb.5b00683)
 
 
