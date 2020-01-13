@@ -60,4 +60,4 @@ NOTE also that current NBFIXes reduced precision to 4 digits from 6.
 
 FOR FUTURE:
 
-the Aksimentiev NBFIXes CUFIX are available in charmm format (https://www.dropbox.com/s/3v1ng0nwm74qciv/toppar_water_ions_cufix.str?dl=0). They would replace both Na Cl and Na - carboxylate with repect to standard (which is without NBFIX - i.e. pre Luo and Roux corrections).
+the Aksimentiev NBFIXes CUFIX are available in charmm format (https://www.dropbox.com/s/3v1ng0nwm74qciv/toppar_water_ions_cufix.str?dl=0). They would replace both Na Cl and Na - carboxylate and a lot more with repect to standard (which is without NBFIX - i.e. pre Luo and Roux corrections).
