@@ -47,3 +47,6 @@ CLA    POT      -0.1142     4.0810 ! Savelyev and MacKerell, JPCB 2015
 ! NA
 LIT    ON3      -0.0167     3.1775 ! Savelyev and MacKerell, JPCB 2015
 ```
+
+In JMB paper these params where used, that were around 2013 already in CHARMM36: Y. Luo, B. Roux, Simulation of osmotic pressure in concentrated aqueous salt solutions, J. Phys. Chem. Lett. 1 (2010) 183–189.
+So apparently these were improved by Savelyev and MacKerell, JPCB 2015
