@@ -54,4 +54,4 @@ So apparently these were improved by Savelyev and MacKerell, JPCB 2015 (https://
 
 Here you can see params and comments in ff files citing publications https://github.com/intbio/gromacs_ff/blob/59ed25f0c97e0599fc653bf43c6651d05205dd8a/charmm36-mar2019.ff/toppar_c36_jul18/toppar_water_ions.str#L301
 
-SOD NA and SOD POT are the same. SOD - prot carboxylate - changed (! Venable, R.M.; Luo, Y,; Gawrisch, K.; Roux, B.; Pastor, R.W. J. Phys. Chem. B 2013, 117 (35), pp 10183–10192.  DOI: 10.1021/jp401512z).
+SOD NA and SOD POT are the same, except for rounding error (now precision is 4 digits). SOD - prot carboxylate - changed (! Venable, R.M.; Luo, Y,; Gawrisch, K.; Roux, B.; Pastor, R.W. J. Phys. Chem. B 2013, 117 (35), pp 10183–10192.  DOI: 10.1021/jp401512z).
