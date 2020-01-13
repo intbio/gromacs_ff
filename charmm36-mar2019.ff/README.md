@@ -29,4 +29,21 @@ In [toppar_c36_jul18](toppar_c36_jul18) folder we put the core files of the jul1
 ## Important notes
 - In CHARMM NBFIX facility allows for overwriting well-depths and vdW radii based on the standard combination rules with atom-pair specific Lennard-Jones parameters (e.g. atom-Ow) that are optimized to reproduce different paprameters.
 These NBFIX directives are implemented in gromacs port with nbfix.itp.
+- Let's see what are the ion parameters here ...
 
+```
+Summary of changes in version C38, 2015/8
+
+ 6) Sodium NBFIX parameters added to toppar_water_ions.str (Sep. 2013)
+ 
+ 
+Summary of changes in version C43/44, 2018/8
+4) Select ion NBFIX parameters from Savelyev and MacKerell, JPCB 2015 added to toppar_water_ions.str
+
+! Chloride
+CLA    LIT      -0.0187     3.6875 ! Savelyev and MacKerell, JPCB 2015
+CLA    SOD      -0.0839     3.7310 ! Savelyev and MacKerell, JPCB 2015
+CLA    POT      -0.1142     4.0810 ! Savelyev and MacKerell, JPCB 2015
+! NA
+LIT    ON3      -0.0167     3.1775 ! Savelyev and MacKerell, JPCB 2015
+```
