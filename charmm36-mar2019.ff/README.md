@@ -24,6 +24,8 @@ A Python program to convert ParamChem CGenFF toppar stream file from CHARMM to G
 
 So the correspndence between ff versions in charmm format and in gromacs format is a bit unclear.
 
+In [toppar_c36_jul18](toppar_c36_jul18) folder we put the core files of the jul18 version of ff in charmm format, there is a history file there .
+
 ## Important notes
 - In CHARMM NBFIX facility allows for overwriting well-depths and vdW radii based on the standard combination rules with atom-pair specific Lennard-Jones parameters (e.g. atom-Ow) that are optimized to reproduce different paprameters.
 These NBFIX directives are implemented in gromacs port with nbfix.itp.
