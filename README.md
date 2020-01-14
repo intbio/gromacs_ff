@@ -3,7 +3,8 @@ Trusted force field files for gromacs in this repo:
 
 - https://github.com/intbio/gromacs_ff/tree/master/amber14sb_parmbsc1.ff AMBER ff from Gromacs web-site
 - https://github.com/intbio/gromacs_ff/tree/master/amber14sb_parmbsc1_cufix.ff same ff but with CUFIX corrections
-- https://github.com/intbio/gromacs_ff/tree/master/charmm36-mar2019.ff CHARMM force filed from [MacKerrel Lab](http://mackerell.umaryland.edu/charmm_ff.shtml)
+- https://github.com/intbio/gromacs_ff/tree/master/charmm36-mar2019.ff CHARMM force field from [MacKerrel Lab](http://mackerell.umaryland.edu/charmm_ff.shtml)
+- https://github.com/intbio/gromacs_ff/tree/master/charmm36-mar2019_cufix.ff CHARMM ff with CUFIX corrections implemented by @molsim - testing is needed.
 
 ## General notes on available force fields
 ### Simulating DNA
