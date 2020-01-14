@@ -4,8 +4,9 @@ Trusted force field files for gromacs in this repo:
 - https://github.com/intbio/gromacs_ff/tree/master/amber14sb_parmbsc1.ff AMBER ff with parmbsc1 corrections to simulate DNA from Gromacs web-site
 - https://github.com/intbio/gromacs_ff/tree/master/amber14sb_parmbsc1_cufix.ff same ff but with CUFIX corrections
 - https://github.com/intbio/gromacs_ff/tree/master/amber14sb_OL15.ff AMBER ff with OL15 refinements to simulate DNA (this is an alternative to pambsc1 as of Amber18) from Gromacs web-site
-- https://github.com/intbio/gromacs_ff/tree/master/charmm36-mar2019.ff CHARMM force filed from [MacKerrel Lab](http://mackerell.umaryland.edu/charmm_ff.shtml)
 - https://github.com/intbio/gromacs_ff/tree/master/amber14sb_parmbsc1_opc.ff - this is the corresponding AMBER ff but with OPC water model.
+- https://github.com/intbio/gromacs_ff/tree/master/charmm36-mar2019.ff CHARMM force field from [MacKerrel Lab](http://mackerell.umaryland.edu/charmm_ff.shtml)
+- https://github.com/intbio/gromacs_ff/tree/master/charmm36-mar2019_cufix.ff CHARMM ff with CUFIX corrections implemented by @molsim - testing is needed.
 
 
 ## General notes on available force fields
