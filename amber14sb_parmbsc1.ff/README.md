@@ -14,4 +14,9 @@ K+       1.705     0.1936829
 0.1936829 kcal/mol = 4.184*0.1936829 = 0.8103692536 kJ/mol
 vdw radius of 1.705 A => 1.705/(2)^(1/6)=1.5189823144292784*2=3.037964628858557
 
-
+# IMPORTANT
+It looks that the downloaded ff has the known error with Na LJ params - we fixed it here
+```
+;Na          11      22.99    0.0000  A   2.43928e-01  3.65846e-02 ; this is a known mistake - corrected by Alexey Shaytan
+Na          11      22.99    0.0000  A   2.43928e-01  3.65846e-01 
+```
