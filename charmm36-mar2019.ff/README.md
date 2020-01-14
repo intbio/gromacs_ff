@@ -1,4 +1,4 @@
-# CHARMM force filed from MacKerrel Lab
+# CHARMM force field from MacKerrel Lab
 
 This is CHARMM 36 ff port for Gromacs from march 2019  from MacKerrel Lab web site http://mackerell.umaryland.edu/charmm_ff.shtml
 
@@ -56,8 +56,3 @@ From  Venable, R.M.; Luo, Y,; Gawrisch, K.; Roux, B.; Pastor, R.W. J. Phys. Chem
 Here you can see params and comments in ff files citing publications https://github.com/intbio/gromacs_ff/blob/59ed25f0c97e0599fc653bf43c6651d05205dd8a/charmm36-mar2019.ff/toppar_c36_jul18/toppar_water_ions.str#L301
 
 NOTE also that current NBFIXes reduced precision to 4 digits from 6.
-
-
-FOR FUTURE:
-
-the Aksimentiev NBFIXes CUFIX are available in charmm format (https://www.dropbox.com/s/3v1ng0nwm74qciv/toppar_water_ions_cufix.str?dl=0). They would replace both Na Cl and Na - carboxylate and a lot more with repect to standard (which is without NBFIX - i.e. pre Luo and Roux corrections).

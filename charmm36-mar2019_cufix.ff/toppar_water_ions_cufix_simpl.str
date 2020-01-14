@@ -1,0 +1,133 @@
+!NBFIX
+!              Emin         Rmin
+!            (kcal/mol)     (A)
+! monovalent cation -- protein acetate (OC), lipid acetate (OCL)
+!LIT    OC       -0.016721      2.9975   ! standard
+ LIT    OC       -0.016721      3.1875   ! +0.19 Yoo & Aksimentiev, JPCL 2012
+ LIT    OCL      -0.016721      3.1875   ! +0.19 Yoo & Aksimentiev, JPCL 2012
+ LIT    OG2D2    -0.016721      3.1875   ! +0.19 Yoo & Aksimentiev, JPCL 2012
+ LIT    OC2D2    -0.016721      3.1875   ! +0.19 Yoo & Aksimentiev, JPCL 2012
+!SOD    OC       -0.075020      3.11075  ! standard
+ SOD    OC       -0.075020      3.20075  ! +0.09 Yoo & Aksimentiev, JPCL 2012
+ SOD    OCL      -0.075020      3.20075  ! +0.09 Yoo & Aksimentiev, JPCL 2012
+ SOD    OG2D2    -0.075020      3.20075  ! +0.09 Yoo & Aksimentiev, JPCL 2012
+ SOD    OC2D2    -0.075020      3.20075  ! +0.09 Yoo & Aksimentiev, JPCL 2012
+!POT    OC       -0.102176      3.46375  ! standard
+ POT    OC       -0.102176      3.54375  ! +0.08 Yoo & Aksimentiev, JPCL 2012
+ POT    OCL      -0.102176      3.54375  ! +0.08 Yoo & Aksimentiev, JPCL 2012
+ POT    OG2D2    -0.102176      3.54375  ! +0.08 Yoo & Aksimentiev, JPCL 2012
+ POT    OC2D2    -0.102176      3.54375  ! +0.08 Yoo & Aksimentiev, JPCL 2012
+!RUB    OC       -0.134164      3.60000  ! standard
+ RUB    OC       -0.134164      3.65600  ! +0.056 Yoo & Aksimentiev, PCCP 2018
+ RUB    OCL      -0.134164      3.65600  ! +0.056 Yoo & Aksimentiev, PCCP 2018
+ RUB    OG2D2    -0.134164      3.65600  ! +0.056 Yoo & Aksimentiev, PCCP 2018
+ RUB    OC2D2    -0.134164      3.65600  ! +0.056 Yoo & Aksimentiev, PCCP 2018
+
+! monovalent cation -- lipid phosphate (O2L), nucleic acid phosphate (ON3)
+!LIT    OC       -0.016721      2.9975   ! standard
+ LIT    O2L      -0.016721      3.1875   ! +0.19 Yoo & Aksimentiev, JPCL 2012
+ LIT    ON3      -0.016721      3.1875   ! +0.19 Yoo & Aksimentiev, JPCL 2012
+ LIT    OG2P1    -0.016721      3.1875   ! +0.19 Yoo & Aksimentiev, JPCL 2012
+ LIT    OC2DP    -0.016721      3.1875   ! +0.19 Yoo & Aksimentiev, JPCL 2012
+!SOD    OC       -0.075020      3.11075  ! standard
+ SOD    O2L      -0.075020      3.20075  ! +0.09 Yoo & Aksimentiev, JPCL 2012
+ SOD    ON3      -0.075020      3.20075  ! +0.09 Yoo & Aksimentiev, JPCL 2012
+ SOD    OG2P1    -0.075020      3.20075  ! +0.09 Yoo & Aksimentiev, JPCL 2012
+ SOD    OC2DP    -0.075020      3.20075  ! +0.09 Yoo & Aksimentiev, JPCL 2012
+!POT    OC       -0.102176      3.46375  ! standard
+ POT    O2L      -0.102176      3.54375  ! +0.08 Yoo & Aksimentiev, JPCL 2012
+ POT    ON3      -0.102176      3.54375  ! +0.08 Yoo & Aksimentiev, JPCL 2012
+ POT    OG2P1    -0.102176      3.54375  ! +0.08 Yoo & Aksimentiev, JPCL 2012
+ POT    OC2DP    -0.102176      3.54375  ! +0.08 Yoo & Aksimentiev, JPCL 2012
+!RUB    OC       -0.134164      3.60000  ! standard
+ RUB    O2L      -0.134164      3.65600  ! +0.056 Yoo & Aksimentiev, PCCP 2018
+ RUB    ON3      -0.134164      3.65600  ! +0.056 Yoo & Aksimentiev, PCCP 2018
+ RUB    OG2P1    -0.134164      3.65600  ! +0.056 Yoo & Aksimentiev, PCCP 2018
+ RUB    OC2DP    -0.134164      3.65600  ! +0.056 Yoo & Aksimentiev, PCCP 2018
+
+! monovalent cation -- chloride
+!LIT    CLA      -0.018695      3.5675   ! standard
+ LIT    CLA      -0.018695      3.7975   ! +0.23 Yoo & Aksimentiev, JPCL 2012
+!SOD    CLA      -0.083875      3.68075  ! standard
+ SOD    CLA      -0.083875      3.74075  ! +0.06 Yoo & Aksimentiev, JPCL 2012
+!POT    CLA      -0.114237      4.03375  ! standard
+ POT    CLA      -0.114237      4.08375  ! +0.05 Yoo & Aksimentiev, JPCL 2012
+!RUB    CLA      -0.150000      4.170    ! standard
+ RUB    CLA      -0.150000      4.192    ! +0.022 Yoo & Aksimentiev, PCCP 2018
+
+! amine/guanidinium-chloride
+!NH3    CLA       -0.173205     4.12     ! standard
+ NH3    CLA       -0.173205     4.15     ! +0.03 Yoo & Aksimentiev, JCTC 2016
+ NH3L   CLA       -0.173205     4.15     ! +0.03 Yoo & Aksimentiev, JCTC 2016
+ NC2    CLA       -0.173205     4.15     ! +0.03 Yoo & Aksimentiev, JCTC 2016
+ NP     CLA       -0.173205     4.15     ! +0.03 Yoo & Aksimentiev, JCTC 2016
+ NR3    CLA       -0.173205     4.15     ! +0.03 Yoo & Aksimentiev, JCTC 2016
+ NG3P3  CLA       -0.173205     4.15     ! +0.03 Yoo & Aksimentiev, JCTC 2016
+
+! amine in amino acids - carboxylate
+!NH3     OC     -0.15491933384829667540   3.55  ! standard
+ NH3     OC     -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NH3     OCL    -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NH3     OG2D2  -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NH3     OC2D2  -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+! amine in amino acids - phosphate
+ NH3     O2L    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NH3     ON3    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NH3     OG2P1  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NH3     OC2DP  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+! amine in lipid - carboxylate
+ NH3L    OC     -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NH3L    OCL    -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NH3L    OG2D2  -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NH3L    OC2D2  -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+! amine in lipid - phosphate
+!NH3L    O2L    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NH3L    ON3    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NH3L    OG2P1  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NH3L    OC2DP  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+! amine in N-ter proline - carboxylate
+!NP      OC     -0.15491933384829667540   3.55  ! standard
+ NP      OC     -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NP      OCL    -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NP      OG2D2  -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NP      OC2D2  -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+! amine in N-ter proline - phosphate
+ NP      O2L    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NP      ON3    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NP      OG2P1  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NP      OC2DP  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+! amine in charged histidine - carboxylate
+!NR3     OC     -0.15491933384829667540   3.55  ! standard
+ NR3     OC     -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NR3     OCL    -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NR3     OG2D2  -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NR3     OC2D2  -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+! amine in charged histidine - phosphate
+ NR3     O2L    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NR3     ON3    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NR3     OG2P1  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NR3     OC2DP  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+! cgenff amine - carboxylate
+!NG3P3   OC     -0.15491933384829667540   3.55  ! standard
+ NG3P3   OC     -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NG3P3   OCL    -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NG3P3   OG2D2  -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+ NG3P3   OC2D2  -0.15491933384829667540   3.63  ! +0.08 Yoo & Aksimentiev, JCTC 2016
+! cgenff amine - phosphate
+ NG3P3   O2L    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NG3P3   ON3    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NG3P3   OG2P1  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NG3P3   OC2DP  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+
+! guanidinium - carboxylate
+!NC2     OC     -0.15491933384829667540   3.55  ! standard
+ NC2     OC     -0.15491933384829667540   3.75  ! +0.20 Yoo & Aksimentiev, PCCP 2018
+ NC2     OCL    -0.15491933384829667540   3.75  ! +0.20 Yoo & Aksimentiev, PCCP 2018
+ NC2     OG2D2  -0.15491933384829667540   3.75  ! +0.20 Yoo & Aksimentiev, PCCP 2018
+ NC2     OC2D2  -0.15491933384829667540   3.75  ! +0.20 Yoo & Aksimentiev, PCCP 2018
+! guanidinium - phosphate
+ NC2     O2L    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NC2     ON3    -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NC2     OG2P1  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+ NC2     OC2DP  -0.15491933384829667540   3.71  ! +0.16 Yoo & Aksimentiev, JCTC 2016
+
