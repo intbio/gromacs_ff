@@ -1,0 +1,18 @@
+OL15 nucleic (Zgarbova et al., J. Chem. Theory Comput. 11, 5723-36, 2015;
+J. Chem. Theory Comput. 7, 2886-2902, 2011)
+
+********************************************************************
+* OL15 nucleic acid package combines several dihedral              *
+* modifications, which were added to ff99 + bsc0 force field:      *
+* DNA:                                                             *
+* chiOL4 (Krepl et al. 8, 2506-2520, 2012)                         *
+* epsilon/zetaOL1 (Zgarbova et al. JCTC 9, 2339-2354, 2013)        *
+* betaOL1 (Zgarbova et al. JCTC  11, 5723-36, 2015)                *
+* RNA:                                                             *
+* chiOL3 (Zgarbova et al. JCTC 7, 2866-2902, 2011)                 *
+* see also http://ffol.upol.cz                                     *
+* OL15 nucleic is combined with amber14SB protein FF implemented   *
+* by Man Hoang Viet, vhman@ncsu.edu                                *
+* In this version corrected typo in Na+ ion parameters             *
+********************************************************************
+
