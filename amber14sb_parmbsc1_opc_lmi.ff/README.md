@@ -1,8 +1,4 @@
 # AMBER14sb_parmbsc1_opc_lmi 
-# TODO
-
-## Looks like the VDW types for water are currenly incorrect see top of opc.itp
-
 
 - The task of this folder is to provide a port of AMBER14sb_parmbsc1 ff with OPC water model and Li/Merz ions for gromacs.
 
@@ -18,6 +14,7 @@
 	- Took AMBER14sb_parmbsc1
 	- Added opc.itp
 	- atomtypes directive commented out
+	- The OW LJ parameres from that directive incorporated into ffnonbonded.itp
 	- Default ff has the Joung and Cheatham 2008 ions, see [here](../amber14sb_parmbsc1.ff/README.md)
 	- However, from Amber19 manual we see:
 ```
