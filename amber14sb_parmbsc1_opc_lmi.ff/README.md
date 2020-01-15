@@ -12,7 +12,7 @@
 # gmx solvate -cs tip4p.gro  -box 4
 # change tip4p.itp to opc.itp in topol.top
 ```
-- opc.itp was obtained from here https://bioinformatics.cs.vt.edu/~izadi/OPC_Gromacs/opc.top
+- opc.itp was obtained from [here](https://bioinformatics.cs.vt.edu/~izadi/) https://bioinformatics.cs.vt.edu/~izadi/OPC_Gromacs/opc.top
 
 - FF generation protocol:
 	- Took AMBER14sb_parmbsc1
