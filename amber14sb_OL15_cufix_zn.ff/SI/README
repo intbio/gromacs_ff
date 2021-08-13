@@ -1,0 +1,5 @@
+Follow instructions at the node "Adding a Residue to a Force Field" in the GROMACS documentation at www.gromacs.org.
+
+Substitute the CYS and HYS residues string with the zinc(II)-bound CYZ, HEZ/HDZ strings in the pdb file.
+
+

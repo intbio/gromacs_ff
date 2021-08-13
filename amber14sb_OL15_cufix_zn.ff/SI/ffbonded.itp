@@ -1,0 +1,28 @@
+[ bondtypes ]
+; i    j  func       b0          kb
+  CR NZ         1    0.13350   408358.4 ; 7,(1986),230; HIS
+  CV NZ         1    0.13940   343088.0 ; 7,(1986),230; HIS
+  CC NZ         1    0.13940   343088.0 ; 7,(1986),230; HIS
+  CT SZ         1    0.18100   198321.6 ; ged from 222.0 based on methanethiol nmodes
+
+[ angletypes ]
+;  i    j    k  func       th0       cth
+H1  CT  SZ           1   109.500    418.400 ; AA cyx     changed based on NMA nmodes
+CT  CT  SZ           1   108.600    418.400 ; AA cys
+CT  CC  NZ           1   120.000    585.760 ; AA his
+H5  CR  NZ           1   120.000    418.400 ; new99 his
+H4  CV  NZ           1   120.000    418.400 ; new99 his
+CR  NZ  CV           1   117.000    585.760 ; AA his
+NA  CR  NZ           1   120.000    585.760 ; AA his
+CC  CV  NZ           1   120.000    585.760 ; AA his
+H4  CV  NZ           1   120.000    418.400 ; new99 his
+CW  CC  NZ           1   120.000    585.760 ; AA his
+CC  NZ  CR           1   117.000    585.760 ; AA his
+
+[ dihedraltypes ]
+;i  j   k  l	 func      phase      kd      pn
+ X   CB  NZ  X     9     180.0     10.66920     2  ; JCC,7,(1986),230
+ X   CC  NZ  X     9     180.0     10.04160     2  ; JCC,7,(1986),230
+ X   CR  NZ  X     9     180.0     20.92000     2  ; JCC,7,(1986),230
+ X   CV  NZ  X     9     180.0     10.04160     2  ; JCC,7,(1986),230
+ NZ  CW  CC  CT    4      180.00     4.60240     2	; 

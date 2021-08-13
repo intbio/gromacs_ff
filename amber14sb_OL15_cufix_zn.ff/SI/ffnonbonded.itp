@@ -1,0 +1,5 @@
+[ atomtypes ]
+; name      at.num  mass     charge ptype  sigma      epsilon
+NZ           7      14.01    0.0000  A   3.35000e-01  7.11280e-01
+SZ          16      32.06    0.0000  A   3.66359e-01  1.04600e+00
+Zn          30      65.4     0.0000  A   2.59452e-01  5.23000e-02
