@@ -37,3 +37,5 @@ NONBON
 	- The conversion rules are as [here](../amber14sb_parmbsc1.ff/README.md)
 	- ffnonbonded.itp was fixed. NOTE that the Li/Merz params are really very different from Young&Cheatham
 
+
+Before start you shoud copy file "residuetypes.dat" to "GMX_system" directory.
