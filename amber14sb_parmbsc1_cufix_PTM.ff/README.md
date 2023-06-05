@@ -25,3 +25,5 @@
       Li, Na, K, Cl, MG, Rb, Cs, F, Br, I. 
       CUFIX uses new ion parameters by the Cheatham group.
   
+
+- Before start you shoud copy file "residuetypes.dat" to "GMX_system" directory.
