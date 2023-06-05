@@ -1,0 +1,5 @@
+; atom renaming specification
+; residue   gromacs  forcefield
+  PSER       2HB               HB1
+  PSER       3HB               HB2
+  PSER       O01               OXT

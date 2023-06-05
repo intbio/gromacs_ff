@@ -1,0 +1,61 @@
+[ bondedtypes ]
+; Col 1: Type of bond
+; Col 2: Type of angles
+; Col 3: Type of proper dihedrals
+; Col 4: Type of improper dihedrals
+; Col 5: Generate all dihedrals if 1, only heavy atoms of 0.
+; Col 6: Number of excluded neighbors for nonbonded interactions
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1
+; Col 8: Remove impropers over the same bond as a proper if it is 1
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       1          9          4        1         3      1     0
+
+[ PSER ]
+[ atoms ]
+    N    N -0.4157   1
+   CA   CT -0.0249   2
+    C    C  0.5973   3
+    O    O -0.5679   4
+   CB   CT -0.7431   5
+   OG   OS -0.1759   6
+  O1P   O2 -0.8289   7
+  O2P   O2 -0.8289   8
+  O3P   O2 -0.8289   9
+    P    P  0.8757  10
+    H    H  0.2719  11
+   HA   H1  0.0843  12
+  HB1   H1  0.2925  13
+  HB2   H1  0.2925  14
+[ bonds ]
+    N   CA  0.1449    282000.0
+    N    H  0.1010    363170.0
+   CA    C  0.1522    265270.0
+   CA   CB  0.1526    259410.0
+   CA   HA  0.1090    284510.0
+    C    O  0.1229    476980.0
+   CB   OG  0.1410    267780.0
+   CB  HB1  0.1090    284510.0
+   CB  HB2  0.1090    284510.0
+   OG    P  0.1610    192460.0
+  O1P    P  0.1480    439320.0
+  O2P    P  0.1480    439320.0
+  O3P    P  0.1480    439320.0
+   -C    N
+[ angles ]
+   CB   OG    P 120.5000        836.8
+   OG    P  O1P 108.2300        836.8
+   OG    P  O2P 108.2300        836.8
+   OG    P  O3P 108.2300        836.8
+  O1P    P  O2P 119.9000       1171.5
+  O1P    P  O3P 119.9000       1171.5
+  O2P    P  O3P 119.9000       1171.5
+[ dihedrals ]
+   CA   CB   OG    P    0.000   1.6039     3
+   CB   OG    P  O1P    0.000   2.3012     3
+   CB   OG    P  O2P    0.000   2.3012     3
+   CB   OG    P  O3P    0.000   2.3012     3
+    P   OG   CB  HB1    0.000   1.6039     3
+    P   OG   CB  HB2    0.000   1.6039     3
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O

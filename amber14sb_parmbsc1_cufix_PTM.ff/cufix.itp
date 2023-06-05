@@ -1,0 +1,99 @@
+; This file (cufix.itp) is compatible with any AMBER ff99 variants in gromacs format. 
+; Follow these simple steps to apply CUFIX to your version of ff99.
+; 1. Copy the following files to your gromacs-format ff99 folder: cufix.itp, mg-sol6.itp mg-sol6.pdb ca-sol7.itp ca-sol7.pdb
+; 2. Replace atom types of O1P and O2P atoms (O2) with ON2 for all nucleotides in dna.rtp and rna.rtp. ON2 atom type is defined in cufix.itp.
+; 3. Add the following line to forcefield.itp (between #include "ffnonbonded.itp" and #include "ffbonded.it"): #include "cufix.itp". 
+; 4. Delete the following ions from ffnonbonded.itp: Li, Na, K, Cl, MG, Rb, Cs, F, Br, I. CUFIX uses new ion parameters by the Cheatham group.
+; 5. You're ready to go! Make sure that CUFIX is optimized with tip3p.itp.
+
+[ atomtypes ]
+; phosphate oxygens (ON2) are different from acetate oxygens (O2)
+ON2          8      16.00    0.0000  A   2.95992e-01  8.78640e-01  ;
+; ions by cheatham 
+Li           3       6.94    0.0000  A   0.182634    0.117108 ;2.02590e-01  7.65672e-02
+Na          11      22.99    0.0000  A   0.243928    0.365846 ;3.32840e-01  1.15897e-02
+K           19      39.10    0.0000  A   0.303796    0.810369 ;4.73602e-01  1.37235e-03
+Cl          17      35.45    0.0000  A   0.447766    0.148913 ;4.40104e-01  4.18400e-01
+Rb          37      85.47    0.0000  A   0.32304     1.37161  ;5.26699e-01  7.11280e-04
+Cs          55     132.91    0.0000  A   0.352083    1.70096  ;6.04920e-01  3.37230e-04
+F            9      19.00    0.0000  A   0.410348    0.014075 ;3.11815e-01  2.55224e-01
+Br          35      79.90    0.0000  A   0.464693    0.245414 ;0.00000e+00  0.00000e+00
+I           53     126.9     0.0000  A   0.509594    0.224604 ;4.18722e-01  1.67360e+00
+NH3          7      14.01    0.0000  A   3.25000e-01  7.11280e-01   ;jejoong spermine
+NP           7      14.01    0.0000  A   3.25000e-01  7.11280e-01   ;jejoong spermine
+; divalent
+MG      12      24.305000       2.00    A       0.211142996199  0.06276  ;roux
+OWMG    8       15.999400       -0.834  A       0.315058        0.636386 ;TIP3P for mg-sol6
+CAL     20      40.080000       2.00    A       0.24357170954   0.50208  ;roux
+OWCA    8       15.999400       -0.834  A       0.315058        0.636386 ;TIP3P for ca-sol7
+
+[ bondtypes ]
+  C  ON2        1    0.12500   548940.8 ; jejoong
+  ON2 P         1    0.14800   439320.0 ; jejoong
+
+[ angletypes ]
+CT  C   ON2          1   117.000    585.760 ; jejoong
+ON2 C   ON2          1   126.000    669.440 ; jejoong
+ON2 P   OH           1   108.230    376.560 ; jejoong
+ON2 P   ON2          1   119.900   1171.520 ; jejoong
+ON2 P   OS           1   108.230    836.800 ; jejoong
+
+[ dihedraltypes ]
+X   ON2 C   ON2      4      180.00    43.93200     2	; jejoong
+
+[ nonbond_params ]
+; cation-chloride
+; Li     Cl       1       0.3152    0.13205644097884813130 ; cheatham standard
+  Li     Cl       1       0.3272    0.13205644097884813130 ; sigma increased by 0.12Å
+; Na     Cl       1       0.345847  0.23340785204872607284 ; cheatham standard
+  Na     Cl       1       0.347347  0.23340785204872607284 ; sigma increased by 0.015Å
+; K      Cl       1       0.375781  0.34738232381196369675 ; cheatham standard
+  K      Cl       1       0.377781  0.34738232381196369675 ; sigma increased by 0.02Å
+;OWMG   Cl       1       0.381412  0.30784110904490972483 ;  standard
+ OWMG   Cl       1       0.383412  0.30784110904490972483 ; sigma increased by 0.02Å
+;OWCA   Cl        1      0.381412       0.30784110904490972483  ; standard
+ OWCA   Cl        1      0.382412       0.30784110904490972483  ;+0.01
+; cation-acetate
+; Li     O2       1       0.239313  0.32077371014470621669 ; amber-cheatham standard
+  Li     O2       1       0.256313  0.32077371014470621669 ; sigma increased by 0.17Å
+; Na     O2       1       0.269960  0.56696289952694435542 ; amber-cheatham standard
+  Na     O2       1       0.279960  0.56696289952694435542 ; sigma increased by 0.10Å
+; K      O2       1       0.299894  0.84381432682788694163 ; amber-cheatham standard
+  K      O2       1       0.329894  0.84381432682788694163 ; sigma increased by 0.30Å
+;OWMG   O2       1       0.305525  0.74776613659619542843 ; amber(O2)-tip3p(OW) standard
+ OWMG   O2       1       0.311025  0.74776613659619542843 ; sigma increased by 0.055Å
+;OWCA   O2        1      0.305525      0.74776613659619542843  ; standard
+ OWCA   O2        1      0.312525      0.74776613659619542843  ; +0.07
+; cation-phosphate
+; Li     ON2       1       0.239313  0.32077371014470621669 ; amber-cheatham standard
+  Li     ON2       1       0.256313  0.32077371014470621669 ; sigma increased by 0.17Å
+; Na     ON2       1       0.269960  0.56696289952694435542 ; amber-cheatham standard
+  Na     ON2       1       0.279960  0.56696289952694435542 ; sigma increased by 0.10Å
+; K      ON2       1       0.299894  0.84381432682788694163 ; amber-cheatham standard
+  K      ON2       1       0.329894  0.84381432682788694163 ; sigma increased by 0.30Å
+; Divalent
+;OWMG   ON2       1       0.305525  0.74776613659619542843 ; amber(O2)-tip3p(OW) standard
+ OWMG   ON2       1       0.311025  0.74776613659619542843 ; sigma increased by 0.055Å
+;OWCA   O2        1      0.305525      0.74776613659619542843  ; standard
+ OWCA   ON2       1      0.312525      0.74776613659619542843  ; +0.07
+
+; amine-acetate
+; NH3    O2       1       0.310496  0.79054352138259915032  ; standard
+  NH3    O2       1       0.318496  0.79054352138259915032  ; +0.08 for spermine
+  NP     O2       1       0.318496  0.79054352138259915032  ; +0.08 for spermine
+  N3     O2       1       0.318496  0.79054352138259915032  ; +0.08 for LYS
+  N2     O2       1       0.318496  0.79054352138259915032  ; +0.08 for ARG
+; amine-phosphate
+;ON2          8      16.00    0.0000  A   0.295992  0.878640  ; phosphate
+; NH3    ON2      1       0.310496  0.79054352138259915032  ; standard
+  NH3    ON2      1       0.324496  0.79054352138259915032  ; +0.14 for spermine
+  NP     ON2      1       0.324496  0.79054352138259915032  ; +0.14 for spermine
+  N3     ON2      1       0.324496  0.79054352138259915032  ; +0.14 for LYS
+  N2     ON2      1       0.324496  0.79054352138259915032  ; +0.14 for ARG
+
+; carbon-carbon
+;CT           6      12.01    0.0000  A   3.39967e-01  4.57730e-01
+;CT     CT       1       0.339967  0.457730
+ CT     CT       1       0.299967  0.457730 ; -0.40 A
+ CT     CI       1       0.299967  0.457730 ; -0.40 A
+ CI     CI       1       0.299967  0.457730 ; -0.40 A
