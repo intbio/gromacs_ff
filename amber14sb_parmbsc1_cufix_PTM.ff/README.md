@@ -1,5 +1,9 @@
 ## Added Force Fields explanation 
-### AMBER14SB + parambsc1 + CUFIX
+### AMBER14SB + parambsc1 + CUFIX + PTM
+
+We create a small peptide model system with phosphoserine (PSER) blocked by alanine (ALA) to determine the atomic charges for the AMBER ff14SB [Maier, J. A.; Martinez, C., at al., Ff14SB: Improving the Accuracy of Protein Side Chain and Backbone Parameters from Ff99SB // J. Chem. Theory Comput. 2015, 11 (8), 3696–3713] force field supplemented with parmbsc1 [Ivani, I., at al., Parmbsc1: A Refined Force Field for DNA Simulations // Nat. Methods 2016, 13 (1), 55–58] DNA and CUFIX [Yoo, J.; Aksimentiev, A., New Tricks for Old Dogs: Improving the Accuracy of Biomolecular Force Fields by Pair-Specific Corrections to Non-Bonded Interactions // Phys. Chem. Chem. Phys. 2018, 20 (13), 8432–8449] ion parameter corrections. Tripeptide model with phosphoserine was made using PyMOL [Schrodinger, The PyMOL Molecular Graphics System, Version 1.8, 2015], especially its plugin – pytms [Warnecke, A., at al., PyTMs: A Useful PyMOL Plugin for Modeling Common Post-Translational Modifications // BMC Bioinformatics 2014, 15 (1), 370]. 
+PsiRESP [Wang, L.; O’Mara, M. L., PsiRESP: Calculating RESP Charges with Psi4 // J. Open Source Softw. 2022, 7 (73), 4100] was used to calculate atomic charges of tripeptide. We made the following constraints:  an overall charge of -1, the charges of the backbone atoms were constrained to their values in the AMBER ff14SB parameter set and the charges of oxygens atoms in the phosphate group were made equivalent. The topology of tripeptide was generated using acpype [Sousa da Silva, A. W.; Vranken, W. F., ACPYPE - AnteChamber PYthon Parser InterfacE // BMC Res. Notes 2012, 5 (1), 367]. The resulting PSER parameter set was integrated in AMBER ff14SB force field for further MD simulations.
+
  - The original force field: [amber14sb_parmbsc1.ff.tar.gz](http://www.gromacs.org/Downloads/User_contributions/Force_fields) by mhviet, 2017
  - [CUFIX corrections](http://bionano.physics.illinois.edu/CUFIX) by Yoo & Aksimentiev, 2018
  
