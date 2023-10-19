@@ -30,4 +30,4 @@ We create a small peptide model system with phosphoserine (PSER) blocked by alan
       CUFIX uses new ion parameters by the Cheatham group.
   
 
-- Before start you shoud copy file "residuetypes.dat" to "GMX_system" directory.
+- <u>Before start you shoud copy file "residuetypes.dat" to "GMX_system" directory.</u>
