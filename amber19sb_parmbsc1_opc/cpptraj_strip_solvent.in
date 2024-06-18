@@ -1,0 +1,5 @@
+parm box.prmtop
+trajin box.inpcrd
+strip :WAT,K+,Cl- parmout nucleosome.prmtop
+trajout nucleosome.pdb pdb
+run
