@@ -4,8 +4,7 @@ source leaprc.water.opc
 source leaprc.protein.ff19SB_modAA
 mol = loadPDB init.pdb
 setBox mol vdw
-set mol box {240 240 240}
-solvateoct mol OPCBOX 0
+solvateoct mol OPCBOX 30.0
 addions mol K+ 0
 addions mol Cl- 0
 saveamberparm mol draft_box.prmtop draft_box.inpcrd
