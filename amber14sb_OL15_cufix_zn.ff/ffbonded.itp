@@ -836,6 +836,8 @@ H5  O   C   OH       4      180.00     4.60240     2
 H5  O   C   OS       4      180.00     4.60240     2
 N2  NA  CA  NC       4      180.00     4.60240     2
 2C  O   C   OH       4      180.00    43.93200     2
+NA  CW  CC  CT       4      180.00     4.60240     2     ;;; HID force field added
+NA  CV  CC  CT       4      180.00     4.60240     2     ;;; HID force field added
 X   CT  N   CT       4      180.00     4.18400     2
 X   CT  N   CX       4      180.00     4.18400     2
 X   N2  CA  N2       4      180.00    43.93200     2
