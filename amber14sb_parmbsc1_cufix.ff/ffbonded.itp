@@ -780,6 +780,7 @@ CS  N2  CA  NC       4      180.00     4.60240     2
 CT  CV  CC  NA       4      180.00     4.60240     2
 CT  CW  CC  NA       4      180.00     4.60240     2
 NA  CW  CC  CT       4      180.00     4.60240     2
+NA  CV  CC  CT       4      180.00     4.60240     2     ;;; HID force field added
 NB  CW  CC  CT       4      180.00     4.60240     2    
 CT  CW  CC  NB       4      180.00     4.60240     2
 CT  O   C   OH       4      180.00    43.93200     2
